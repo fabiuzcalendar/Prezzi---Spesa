@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Prezzi Spesa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#007bff">
+>
+<body>
+
+    <div class="container">
+
+        <h1>Prezzi Spesa</h1>
+
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Cerca prodotto (es. fagioli)"
+        >
+
+        <button id="addBtn">➕ Aggiungi prezzo</button>
+		<div id="addForm" style="display:none; margin-top:15px;">
+
+    <input type="text" id="product" placeholder="Nome prodotto">
+    <input type="text" id="store" placeholder="Nome negozio">
+    <input type="number" id="price" step="0.01" placeholder="Prezzo (€)">
+    <input type="number" id="validity" placeholder="Validità giorni (es. 14)">
+    <input type="file" id="photo" accept="image/*">
+
+    <button id="saveBtn">💾 Salva prezzo</button>
+
+</div>
+
+
+        <div id="results"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
